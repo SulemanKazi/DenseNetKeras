@@ -13,7 +13,7 @@ model.png: Model architecture block diagram
 
 #DISCLAIMER
 
-This is a work in progress, and is NOT complete. Right now I only have code whch builds the model architecture. The model needs to be trained and tested to see if it matches the results of the papers. If you would like to help out with training and have GPUs available that would be speed up the process. Use at your own risk.
+This is a work in progress, and is NOT complete. Right now I only have code whch builds the model architecture. The model needs to be trained and tested to see if it matches the results of the papers. If you would like to help out with training and have GPUs available that would speed up the process that would be helpful. Use at your own risk.
 
 #TODO
 
