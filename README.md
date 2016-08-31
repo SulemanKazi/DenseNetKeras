@@ -1,6 +1,6 @@
 #DISCLAIMER
 
-This is a work in progress, and is NOT complete. The model code may have errors and may not be the exact same model that the paper implements. Use at your own risk.
+This is a work in progress, and is NOT complete. The model code may have errors. It is currently not the exact model that the paper implements, since I am experimenting with it right now.  Use at your own risk.
 
 #Densely Connected Convolutional Network (DenseNet)
 This repository contains the code for the paper [Densely Connected Convolutional Network](http://arxiv.org/abs/1608.06993). Ported to Keras.
