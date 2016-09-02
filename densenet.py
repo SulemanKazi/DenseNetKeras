@@ -109,10 +109,3 @@ def createModel(depth, inputShape =(3, 32, 32), dataset ='cifar10'):
 	return Model(input=input_img, output=model_out)
 
 
-print "Creating Model..."
-model = createModel(13)
-
-#Output to file
-from keras.utils.visualize_util import plot
-plot(model, to_file='model.png', show_shapes = True)		
-print "Saved model plot"
