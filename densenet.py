@@ -7,7 +7,7 @@ from keras.layers import BatchNormalization
 
 def addLayer(previousLayer, nChannels, nOutChannels, dropRate, blockNum):
 
-	bn = BatchNormalization(name = 'denseb_BatchNorm_{}'.format(blockNum))(previousLayer)
+	bn = BatchNormalization(name = 'denseb_BatchNorm_{}'.format(blockNum) , axis = 1)(previousLayer)
 
 	relu = Activation('relu', name ='denseb_relu_{}'.format(blockNum))(bn)
 
@@ -26,7 +26,7 @@ def addLayer(previousLayer, nChannels, nOutChannels, dropRate, blockNum):
 
 def addTransition(previousLayer, nChannels, nOutChannels, dropRate, blockNum):
 
-	bn = BatchNormalization(name = 'tr_BatchNorm_{}'.format(blockNum))(previousLayer)
+	bn = BatchNormalization(name = 'tr_BatchNorm_{}'.format(blockNum), axis = 1)(previousLayer)
 
 	relu = Activation('relu', name ='tr_relu_{}'.format(blockNum))(bn)
 
@@ -91,7 +91,7 @@ def createModel(depth, inputShape =(3, 32, 32), dataset ='cifar10'):
 	numBlocksAdded += 1
 
 
-	bn = BatchNormalization(name = 'BatchNorm_final')(previousLayer)
+	bn = BatchNormalization(name = 'BatchNorm_final', axis = 1)(previousLayer)
 
 	relu = Activation('relu', name ='relu_final')(bn)
 
